@@ -1,6 +1,5 @@
 import { ArrowUp } from "lucide-react";
 import { navLinks } from "../data/content";
-import { LogoMark } from "./LogoMark";
 import { Reveal } from "./Reveal";
 
 export function Footer() {
@@ -8,22 +7,33 @@ export function Footer() {
     <footer className="bg-ink-soft text-ivory">
       <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-12 md:py-28">
         <Reveal>
-          <div className="flex flex-col items-start justify-between gap-10 border-b border-ivory/15 pb-14 md:flex-row md:items-end">
+          <div className="flex flex-col items-start justify-between gap-10 pb-6 md:flex-row md:items-end">
             <div>
-              <LogoMark className="h-10 w-10 text-ivory" />
-              <p className="display-tight mt-8 text-[clamp(2.6rem,7vw,6rem)] font-light leading-none">
-                Kundan <em className="text-brass-lite">Alliance</em>
-              </p>
+              <img
+                src="/images/kundan-alliance.svg"
+                alt="Kundan Alliance"
+                className="h-12 w-auto md:h-14"
+              />
             </div>
             <p className="max-w-xs font-display text-sm leading-relaxed text-ivory-dim">
-              Recognising the people who move the organisation forward —
-              week after week, year after year.
+              The channel partner ecosystem of{" "}
+              <a
+                href="https://kundans.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brass-lite underline-offset-4 transition-colors duration-300 hover:underline"
+              >
+                Kundan Spaces
+              </a>
+              {". "}
+              Built on performance, trust, collaboration and long term mutual
+              growth.
             </p>
           </div>
         </Reveal>
 
         <Reveal delay={120}>
-          <div className="flex flex-col-reverse items-start justify-between gap-10 pt-10 md:flex-row md:items-center">
+          <div className="flex flex-col-reverse items-start justify-between gap-10 pt-6 md:flex-row md:items-center">
             <p className="font-display text-xs tracking-wide text-ivory-dim">
               © 2026 Kundan Alliance. All rights reserved.
             </p>
