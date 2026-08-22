@@ -1,37 +1,30 @@
 import { cn } from "../utils/cn";
 
 /**
- * The Kundan Alliance mark — a faceted stone, drawn in fine lines.
- * `facet` inherits the brass accent; the outline follows `currentColor`.
+ * The Kundan Alliance mark — the faceted stone from the brand logo
+ * (gold body with ivory facets).
  */
-export function LogoMark({
-  className,
-  withFacets = true,
-}: {
-  className?: string;
-  withFacets?: boolean;
-}) {
+export function LogoMark({ className }: { className?: string }) {
   return (
     <svg
       viewBox="0 0 32 32"
-      fill="none"
       aria-hidden="true"
       className={cn("h-7 w-7", className)}
     >
-      <path
-        d="M16 3.5 L27.5 12.5 L16 28.5 L4.5 12.5 Z"
-        stroke="currentColor"
-        strokeWidth="1.3"
-        strokeLinejoin="round"
-      />
-      {withFacets && (
+      <g transform="translate(1.956 2.239) scale(0.08682)">
         <path
-          d="M4.5 12.5 H27.5 M16 3.5 L11 12.5 L16 28.5 M16 3.5 L21 12.5 L16 28.5"
-          stroke="var(--color-brass-lite)"
-          strokeWidth="0.85"
-          strokeLinejoin="round"
+          fill="#d9b676"
+          d="M 321.5 6 L 323 6.5 L 322 7.5 L 321.5 311 L 59 158.5 L 136 114 L 136.5 112 Q 138 114.5 139.5 111 L 160 100 L 160.5 98 L 185 112.5 L 162 126.5 L 162.5 128 L 160.5 127 L 107 158.5 L 160.5 190 L 162 189.5 Q 161.3 191.8 163.5 191 L 297.5 269 L 298 48.5 L 296.5 49 L 209.5 99 L 186 86 Q 184.9 83.3 187.5 84 L 321.5 6 Z"
         />
-      )}
+        <path
+          fill="#ffffff"
+          d="M 0.5 6 L 160 98 Q 161.1 100.7 158.5 100 L 137.5 113 L 36.5 54 L 24 48 L 24 268.5 L 25.5 269 L 113.5 218 L 136 231.5 L 0.5 311 L 0.5 6 Z"
+        />
+        <path
+          fill="#ffffff"
+          d="M 184.5 113 L 263 158.5 L 185.5 204 L 162 191 Q 160.9 188.3 163.5 189 L 216 158.5 L 162 126.5 L 184.5 113 Z"
+        />
+      </g>
     </svg>
   );
 }

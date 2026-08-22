@@ -15,7 +15,7 @@ export function Footer() {
                 Kundan <em className="text-brass-lite">Alliance</em>
               </p>
             </div>
-            <p className="max-w-xs text-sm leading-relaxed text-ivory-dim">
+            <p className="max-w-xs font-display text-sm leading-relaxed text-ivory-dim">
               Recognising the people who move the organisation forward —
               week after week, year after year.
             </p>
@@ -24,7 +24,7 @@ export function Footer() {
 
         <Reveal delay={120}>
           <div className="flex flex-col-reverse items-start justify-between gap-10 pt-10 md:flex-row md:items-center">
-            <p className="text-xs tracking-wide text-ivory-dim">
+            <p className="font-display text-xs tracking-wide text-ivory-dim">
               © 2026 Kundan Alliance. All rights reserved.
             </p>
 

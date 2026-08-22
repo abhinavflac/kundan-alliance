@@ -6,7 +6,7 @@ import { Hero } from "@/components/Hero";
 // import { Jury } from "@/components/Jury";
 // import { Honours } from "@/components/Honours";
 // import { Secretariat } from "@/components/Secretariat";
-// import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         {/* <Honours /> */}
         {/* <Secretariat /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
